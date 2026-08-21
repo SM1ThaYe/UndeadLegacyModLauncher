@@ -19,7 +19,7 @@ Official launcher for installing, updating, and managing Subquake's Undead Legac
 - 15 GB free disk space for mod installation
 
 ## Installation
-1. Download the latest exe from Releases
+1. Download the latest exe from [Releases](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
 2. Place it in a folder of your choice (e.g. `D:\UndeadLegacyLauncher`)
 3. Run it. Folders locations are auto-configured on first launch (options to change paths)
 4. Click INSTALL and follow the status updates to the left.
@@ -37,6 +37,6 @@ MacOS/Linux not supported.
 ## Links (placeholder for now - ML not yet available elsewhere!)
 - [Undead Legacy Website](https://ul.subquake.com)
 - [Patch Notes](https://ul.subquake.com/patch-notes)
-- [Download Mod](https://ul.subquake.com/download)
+- [Mod Download](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
 
 © 2026 SMiThaYe & Subquake
