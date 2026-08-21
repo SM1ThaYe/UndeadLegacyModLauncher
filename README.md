@@ -30,11 +30,11 @@ Just replace the exe with the latest release.
 Your config and paths are saved automatically.
 
 ## Troubleshooting
-Important: When you press PLAY, it only needs to be pressed ONCE. The reason 7D2D seems to take longer is that the Mod Launcher is waiting for Unity engine to engage, and the mod to then load hundreds of custom files - the mod is MASSIVE. It may take up to 60 seconds for the mod to show the Main Menu. This is normal.
-If paths ever change with a new ML update, you don't lose anything, set your folders as it was before.
-Supports Windows 11/10 64-bit officially. Windows 8 should work, older OS won't work.
-MacOS/Linux not supported.
-Steam overlay is not supported as the game is launched directly from the standalone UL folder. A workaround for Steam is to Add a non-Steam game for 7DaysToDie.exe, but you'd lose the backup/update protections of the Mod Launcher.
+- Important: When you press PLAY, it only needs to be pressed ONCE. The reason 7D2D seems to take longer is that the Mod Launcher is waiting for Unity engine to engage, and the mod to then load hundreds of custom files - the mod is MASSIVE. It may take up to 60 seconds for the mod to show the Main Menu. This is normal.
+- If paths ever change with a new ML update, you don't lose anything, set your folders as it was before.
+- Supports Windows 11/10 64-bit officially. Windows 8 should work, older OS won't work.
+- MacOS/Linux not supported.
+- Steam overlay is not supported as the game is launched directly from the standalone UL folder. A workaround for Steam is to Add a non-Steam game for 7DaysToDie.exe, but you'd lose the backup/update protections of the Mod Launcher.
 
 ## Links
 - [Undead Legacy Website](https://ul.subquake.com)
