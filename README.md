@@ -35,7 +35,7 @@ Your config and paths are saved automatically.
 - Supports Windows 11/10 64-bit officially. Windows 8 should work, older OS won't work.
 - MacOS/Linux not supported.
 - Steam overlay is not supported as the game is launched directly from the standalone UL folder. A workaround for Steam is to Add a non-Steam game for 7DaysToDie.exe, but you'd lose the backup/update protections of the Mod Launcher.
-- When installing 7D2D game and the Undead Legacy mod fresh, if status bar seems stuck it isn't, this is due to your Windows search indexer slowing this down. You can open TaskManager and end search indexer processor to instantly speed this up.
+- When installing 7D2D game and the Undead Legacy mod fresh, if status bar seems stuck it isn't, this is due to your Windows search indexer slowing this down. You can open TaskManager and end search indexer process to instantly speed this up.
 
 ## Links
 - [Undead Legacy Website](https://ul.subquake.com)
