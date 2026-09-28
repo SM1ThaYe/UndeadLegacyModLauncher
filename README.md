@@ -30,7 +30,8 @@ Just replace the exe with the latest release.
 Your config and paths are saved automatically.
 
 ## Troubleshooting
-- Important: When you press PLAY, it only needs to be pressed once - I have now coded this so that pressing it once will prevent additional presses. The reason 7D2D seems to take longer is that the Mod Launcher is waiting for Unity engine to engage, and the mod to then load hundreds of custom files - the mod is MASSIVE. It may take up to 60 seconds for the mod to show the Main Menu. This is normal.
+- If your Antivirus or Windows SmartScreen flags the launcher, this is a false positive. Community tools packaged with Python/PyInstaller are commonly flagged by automated scanners because they download and extract mod archives without an expensive commercial signing certificate. The launcher is 100% safe. Run anyway and add an exclusion.
+- When you press PLAY, it only needs to be pressed once - I have now coded this so that pressing it once will prevent additional presses. The reason 7D2D seems to take longer is that the Mod Launcher is waiting for Unity engine to engage, and the mod to then load hundreds of custom files - the mod is MASSIVE. It may take up to 60 seconds for the mod to show the Main Menu. This is normal.
 - If paths ever change with a new ML update, you don't lose anything. Set your folders as they were before.
 - Supports Windows 11/10 64-bit officially. Windows 8 should work, older OS won't work.
 - MacOS/Linux not supported.
