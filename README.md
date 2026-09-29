@@ -91,7 +91,7 @@ Found a bug? Report it here with your logs attached:
 
 ## About the Code & License
 
-The Undead Legacy Mod Launcher is closed-source freeware, created and maintained by SMiThaYe & Subquake.
+The Undead Legacy Mod Launcher is closed-source freeware, created and maintained by SMiThaYe.
 
 - **Personal Use**: You are welcome to use this launcher freely for personal gaming.
 - **Closed Source**: Please do not decompile, reverse engineer, modify, re-host, or redistribute this software on other websites without permission.
