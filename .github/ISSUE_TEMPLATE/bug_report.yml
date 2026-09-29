@@ -1,0 +1,84 @@
+name: Bug Report
+description: Report an issue or crash with the Undead Legacy Mod Launcher
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping test the Undead Legacy Mod Launcher! Please fill in the details below to help us reproduce and resolve the issue.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: Select your Windows version.
+      options:
+        - Windows 11 (64-bit)
+        - Windows 10 (64-bit)
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: resolution
+    attributes:
+      label: Display Resolution
+      description: What screen resolution are you running?
+      options:
+        - 1920x1080 (FHD 1080p)
+        - 2560x1440 (2.5K QHD)
+        - 3840x2160 (4K UHD)
+        - Ultrawide (21:9 / 32:9)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Launcher Version
+      description: Look at the title bar or Settings panel (e.g. 2.7.0.9).
+      placeholder: "e.g. 2.7.0.9"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: A clear explanation of what went wrong.
+      placeholder: What happened? What did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we replicate this issue?
+      placeholder: |
+        1. Open launcher
+        2. Click '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Files
+      description: Drag and drop your Player.log or LogOutput.log here, or paste relevant error lines.
+      placeholder: Drag and drop files here (or paste error text)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I launched through the launcher's PLAY button (EAC disabled).
+          required: true
+        - label: I have at least 15 GB free disk space on the install drive.
+          required: false
