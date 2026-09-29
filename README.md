@@ -1,72 +1,98 @@
 # Undead Legacy Mod Launcher
+
 Official launcher for installing, updating, and managing Subquake's Undead Legacy overhaul mod for 7 Days to Die.
 
 <img width="1582" height="1213" alt="LauncherForGL" src="https://github.com/user-attachments/assets/2e543263-6707-41fc-ba8d-8a8d3cc29ced" />
 
+---
+
 ## Features
-- Portable, no installation required
-- One-click install and update of Undead Legacy mod (custom folder location options)
-- Automatic Steam 7 Days to Die detection
-- Standalone game copy (doesn't modify your vanilla install)
-- Isolated save game management with auto-backups
-- Deep CRC32 integrity scanning & repair
-- Multi-part download with progress bar
-- Built-in patch notes from ul.subquake.com
+- **Portable**: No installation required. Run it from any folder.
+- **One-Click Install & Update**: Installs and updates Undead Legacy automatically with custom folder location options.
+- **Keeps Steam Game Clean**: Creates a standalone game copy so your original vanilla install is never modified.
+- **Safe Save Games**: All saves, settings, and player data are kept separate in `./UserData/` to avoid conflicts with vanilla worlds.
+- **Automatic Backups**: Automatically zips up your saves before extracting any game updates.
+- **Fast Downloads**: Multi-part streaming with progress bar, live transfer speed, pause, resume, and cancel buttons.
+- **File Integrity Verifier**: Scans and repairs missing or corrupted files automatically.
+- **Built-in Patch Notes**: Reads the official update logs straight from `ul.subquake.com`.
+
+---
 
 ## Requirements
-- Windows 10 or 11 64-bit, Windows 8.1 may work but with small UI issues
-- 7 Days to Die (v2.6 b14) via Steam
-- 15 GB free disk space for mod installation
+- Windows 10 or 11 (64-bit). *(Windows 8.1 may work, but is not officially supported. macOS and Linux are not supported.)*
+- 7 Days to Die (v2.6 b14) installed via Steam.
+- 15 GB free disk space on your chosen install drive.
+
+---
 
 ## Installation
-1. Download the latest exe from [Releases](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
-2. Place it in a folder of your choice (e.g. `D:\UndeadLegacyLauncher`)
-3. Run it. Folder locations are auto-configured on first launch (with options to change paths)
-4. Click INSTALL and follow the status updates to the left.
-5. Popup will inform you everything is installed.
+1. Download the latest executable from **[Releases](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)**.
+2. Place it in a folder of your choice (e.g. `D:\UndeadLegacyLauncher`).
+3. Run `Undead Legacy Mod Launcher.exe`. Folder locations are auto-configured on first launch (with options to change paths).
+4. Click **INSTALL** and follow the status updates on the left.
+5. A popup will inform you once everything is finished. Click **PLAY** to start.
 
-## Updating Mod Launcher
-Just replace the exe with the latest release. 
-Your config and paths are saved automatically.
-To update Undead Legacy mod, it will check when you first open the Mod Launcher and notify you, then press UPDATE.
-Update also acts as a full mod download and install (does not affect your modlets).
+---
 
-## Troubleshooting
-- If your Antivirus or Windows SmartScreen flags the launcher, this is a false positive. Community tools packaged with Python/PyInstaller are commonly flagged by automated scanners because they download and extract mod archives without an expensive commercial signing certificate. The launcher is 100% safe. Run anyway and add an exclusion.
-- When you press PLAY, it only needs to be pressed once - I have now coded this so that pressing it once will prevent additional presses. The reason 7D2D seems to take longer is that the Mod Launcher is waiting for Unity engine to engage, and the mod to then load hundreds of custom files - the mod is MASSIVE. It may take up to 60 seconds for the mod to show the Main Menu. This is normal.
-- If paths ever change with a new ML update, you don't lose anything. Set your folders as they were before.
-- Supports Windows 11/10 64-bit officially. Windows 8 should work, older OS won't work.
-- MacOS/Linux not supported.
-- Steam overlay is not supported as the game is launched directly from the standalone UL folder. A workaround for Steam is to Add a non-Steam game for 7DaysToDie.exe, but you'd lose the backup/update protections of the Mod Launcher.
-- When installing 7D2D game and the Undead Legacy mod fresh, if the status bar seems stuck it isn't, this is due to your Windows search indexer slowing this down due to the thousands of files from this mod. You can open TaskManager and end search indexer process to instantly speed this up.
+## Updating the Launcher & Mod
+- **Updating the Launcher**: Just replace the `.exe` with the latest release. Your config and paths are saved automatically.
+- **Updating the Mod**: The launcher checks for mod updates when opened and will notify you. Click **UPDATE** when prompted. (Updates act as a clean mod sync and will not affect your custom modlets or saves).
 
-## Common Issues
-- Windows SmartScreen Blue Banner: Because this is an independent mod utility without an expensive enterprise certificate, Windows SmartScreen will show: "Windows protected your PC". Click "More info" -> "Run anyway".
-- Antivirus False Positives: Compiled native Python/C++ binaries often trigger generic heuristic detections. Add the launcher folder to your antivirus exclusion list if blocked.
-- EasyAntiCheat (EAC) Warning: Undead Legacy and custom Harmony C# modlets cannot run with EAC active. Always launch through the Mod Launchers PLAY button (which automatically bypasses EAC) rather than launching standard 7DTD from Steam. Mod Launchers own UserData folder is also why you should always use the launcher to avoid conflicts and ensure there are no issues.
+---
 
-## Save Game Locations and Backups
-- Sandboxed Saves: Mod Launcher saves all game progress to ./UserData/ inside the mod folder. Your vanilla Steam 7 Days to Die worlds and character profiles are untouched.
-- Automatic Backups: Mod Launcher automatically zips ./UserData/Saves to ./UserData/Backups/ before extracting any mod updates and is limited to 3 backups to save on disk space - downloaded UL ZIPs are automatically deleted unless changed in Mod Launcher Settings.
+## Good to Know & Common Questions
 
-## Game and Mod Launcher Log File Locations
-Log file locations are usually here:
-- **Game Logs (`Player.log` & `Player-prev.log`)**: Press `Win` + `R`, paste `%USERPROFILE%\AppData\LocalLow\The Fun Pimps\7 Days To Die\` and hit **Enter** to open the log folder directly.
+### When you press PLAY, give it up to 60 seconds
+When you click PLAY, the button locks to prevent accidental double-clicks. Because Undead Legacy loads thousands of custom assets, models, and textures, Unity can take **30 to 60 seconds** before the main menu appears. This is completely normal—the game has not frozen.
+
+### Always launch using the launcher's PLAY button (Not Steam)
+Undead Legacy uses custom code patches that EasyAntiCheat (EAC) will block. The launcher's PLAY button automatically bypasses EAC and directs the game to your isolated `./UserData` folder.
+
+### Antivirus and Windows SmartScreen popups
+Because this is a free community tool without an expensive commercial code certificate, Windows or your antivirus may show a blue *"Windows protected your PC"* popup or flag it as unknown. The launcher is 100% safe. Click **"More info"** -> **"Run anyway"**, or add the folder to your antivirus exclusions.
+
+### Extraction seems slow or paused?
+When installing fresh, if the progress bar seems stuck near the end, Windows Search Indexer is usually scanning the thousands of newly extracted mod files in the background. You can open Task Manager and end the "Windows Search" process to immediately speed it up.
+
+### Steam Overlay
+Steam overlay is not supported because the game runs directly from your standalone folder. If you wish to use Steam overlay, you can add `7DaysToDie.exe` as a non-Steam game, though launching through the launcher is always recommended for save protection and update checks.
+
+---
+
+## Save Game Locations & Backups
+- **Sandboxed Saves**: The launcher saves all game progress to `./UserData/` inside the mod folder. Your vanilla Steam 7 Days to Die worlds and character profiles are untouched.
+- **Automatic Backups**: The launcher automatically zips `./UserData/Saves` to `./UserData/Backups/` before extracting any mod updates. It retains the 3 most recent backups to save disk space. Downloaded zip archives are cleaned up automatically.
+
+---
+
+## Log File Locations (For Bug Reports)
+If you run into an issue or crash, please include your log files:
+
+- **Game Logs (`Player.log` & `Player-prev.log`)**:  
+  Press `Win` + `R`, paste:  
+  `%USERPROFILE%\AppData\LocalLow\The Fun Pimps\7 Days To Die\`  
+  and press **Enter** to open your log folder directly.
 - **Mod & Harmony Logs**: `<LauncherFolder>\Subquakes_Undead_Legacy\BepInEx\LogOutput.log`
 - **Launcher Debug Log**: `<LauncherFolder>\update_debug.log`
-- Report your Bugs [here](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/issues/new/choose) or via the specific Undead Legacy Discord channel.
 
-## License & Intellectual Property
-**Undead Legacy Mod Launcher** is proprietary, closed-source freeware. All rights reserved.
+Found a bug? Report it here with your logs attached:  
+**[Submit a Bug Report](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/issues/new/choose)** or reach out in the official Undead Legacy Discord.
 
-- **Permitted Use**: You are granted a free, personal, non-commercial license to use this software to install, update, and manage the Undead Legacy mod for 7 Days to Die.
-- **Restrictions**: You may not reverse engineer, decompile, disassemble, modify, adapt, re-host, mirror, bundle, or distribute modified copies of this software or its binaries without prior written permission from the authors.
-- **Disclaimer**: This software is provided "as is", without warranty of any kind, express or implied. In no event shall the authors be held liable for any damages, save loss, or system issues arising from the use of this software.
-- **Trademarks**: 7 Days to Die is a registered trademark of The Fun Pimps Entertainment LLC. This tool is an independent community launcher created by SMiThaYe, Undead Legacy Mod is created by Subquake, and is not officially affiliated with or endorsed by The Fun Pimps.
+---
+
+## About the Code & License
+The Undead Legacy Mod Launcher is closed-source freeware, created and maintained by SMiThaYe and Subquake.
+
+- **Personal Use**: You are welcome to use this launcher freely for your own gaming.
+- **Closed Source**: Please do not decompile, reverse-engineer, modify, re-host, or redistribute this software on other websites without permission.
+- **Disclaimer**: This software is provided "as is" without warranty of any kind.
+- **Trademarks**: 7 Days to Die is a registered trademark of The Fun Pimps Entertainment LLC. This is an independent community tool created in collaboration with Subquake.
+
+---
 
 ## Links
-- [Undead Legacy Website](https://ul.subquake.com)
-- [Patch Notes](https://ul.subquake.com/patch-notes)
+- [Undead Legacy Official Site](https://ul.subquake.com)
+- [Official Patch Notes](https://ul.subquake.com/patch-notes)
 - [Mod Download](https://ul.subquake.com/download)
 - [Mod Launcher Download](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
 
