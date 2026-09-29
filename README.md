@@ -51,10 +51,18 @@ Update also acts as a full mod download and install (does not affect your modlet
 
 ## Game and Mod Launcher Log File Locations
 Log file locations are usually here:
-(Game logs) C:/Users/YOURUSERNAME/AppData/LocalLow/The Fun Pimps/7 Days To Die/Player.log
-(Game logs) C:/Users/YOURUSERNAME/AppData/LocalLow/The Fun Pimps/7 Days To Die/Player-prev.log
-(Optional custom ML location): D:/UndeadLegacyLauncher/Subquakes_Undead_Legacy/BepInEx/LogOutput.log
-(Optional custom ML location): D:/UndeadLegacyLauncher/update_debug.log
+- **Game Logs (`Player.log` & `Player-prev.log`)**: Press `Win` + `R`, paste `%USERPROFILE%\AppData\LocalLow\The Fun Pimps\7 Days To Die\` and hit **Enter** to open the log folder directly.
+- **Mod & Harmony Logs**: `<LauncherFolder>\Subquakes_Undead_Legacy\BepInEx\LogOutput.log`
+- **Launcher Debug Log**: `<LauncherFolder>\update_debug.log`
+- Report your Bugs [here](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/issues/new/choose) or via the specific Undead Legacy Discord channel.
+
+## License & Intellectual Property
+**Undead Legacy Mod Launcher** is proprietary, closed-source freeware. All rights reserved.
+
+- **Permitted Use**: You are granted a free, personal, non-commercial license to use this software to install, update, and manage the Undead Legacy mod for 7 Days to Die.
+- **Restrictions**: You may not reverse engineer, decompile, disassemble, modify, adapt, re-host, mirror, bundle, or distribute modified copies of this software or its binaries without prior written permission from the authors.
+- **Disclaimer**: This software is provided "as is", without warranty of any kind, express or implied. In no event shall the authors be held liable for any damages, save loss, or system issues arising from the use of this software.
+- **Trademarks**: 7 Days to Die is a registered trademark of The Fun Pimps Entertainment LLC. This tool is an independent community launcher created by SMiThaYe, Undead Legacy Mod is created by Subquake, and is not officially affiliated with or endorsed by The Fun Pimps.
 
 ## Links
 - [Undead Legacy Website](https://ul.subquake.com)
@@ -62,4 +70,4 @@ Log file locations are usually here:
 - [Mod Download](https://ul.subquake.com/download)
 - [Mod Launcher Download](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
 
-© 2026 SMiThaYe & Subquake
+(c) 2026 SMiThaYe & Subquake
