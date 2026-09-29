@@ -6,7 +6,6 @@ Official launcher for installing, updating, and managing Subquake's Undead Legac
   <img width="800" alt="Undead Legacy Mod Launcher" src="https://github.com/user-attachments/assets/3095e956-ac90-4a87-8bc5-387df9f2cd89" />
 </p>
 
----
 
 ## Features
 - **Portable**: No installation required. Run it from any folder.
@@ -18,14 +17,12 @@ Official launcher for installing, updating, and managing Subquake's Undead Legac
 - **File Integrity Verifier**: Scans and repairs missing or corrupted files automatically.
 - **Built-in Patch Notes**: Reads the official update logs straight from `ul.subquake.com`.
 
----
 
 ## Requirements
 - Windows 10 or 11 (64-bit). *(Windows 8.1 may work, but is not officially supported. macOS and Linux are not supported.)*
 - 7 Days to Die (v2.6 b14) installed via Steam.
 - 15 GB free disk space on your chosen install drive.
 
----
 
 ## Installation
 1. Download the latest executable from **[Releases](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)**.
@@ -34,13 +31,11 @@ Official launcher for installing, updating, and managing Subquake's Undead Legac
 4. Click **INSTALL** and follow the status updates on the left.
 5. A popup will inform you once everything is finished. Click **PLAY** to start.
 
----
 
 ## Updating the Launcher & Mod
 - **Updating the Launcher**: Just replace the `.exe` with the latest release. Your config and paths are saved automatically.
 - **Updating the Mod**: The launcher checks for mod updates when opened and will notify you. Click **UPDATE** when prompted. (Updates act as a clean mod sync and will not affect your custom modlets or saves).
 
----
 
 ## Good to Know & Common Questions
 
@@ -59,13 +54,11 @@ When installing fresh, if the progress bar seems stuck near the end, Windows Sea
 ### Steam Overlay
 Steam overlay is not supported because the game runs directly from your standalone folder. If you wish to use Steam overlay, you can add `7DaysToDie.exe` as a non-Steam game, though launching through the launcher is always recommended for save protection and update checks.
 
----
 
 ## Save Game Locations & Backups
 - **Sandboxed Saves**: The launcher saves all game progress to `./UserData/` inside the mod folder. Your vanilla Steam 7 Days to Die worlds and character profiles are untouched.
 - **Automatic Backups**: The launcher automatically zips `./UserData/Saves` to `./UserData/Backups/` before extracting any mod updates. It retains the 3 most recent backups to save disk space. Downloaded zip archives are cleaned up automatically.
 
----
 
 ## Log File Locations (For Bug Reports)
 If you run into an issue or crash, please include your log files:
@@ -80,7 +73,6 @@ If you run into an issue or crash, please include your log files:
 Found a bug? Report it here with your logs attached:  
 **[Submit a Bug Report](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/issues/new/choose)** or reach out in the official Undead Legacy Discord.
 
----
 
 ## About the Code & License
 The Undead Legacy Mod Launcher is closed-source freeware, created and maintained by SMiThaYe and Subquake.
@@ -90,7 +82,6 @@ The Undead Legacy Mod Launcher is closed-source freeware, created and maintained
 - **Disclaimer**: This software is provided "as is" without warranty of any kind.
 - **Trademarks**: 7 Days to Die is a registered trademark of The Fun Pimps Entertainment LLC. This is an independent community tool created in collaboration with Subquake.
 
----
 
 ## Links
 - [Undead Legacy Official Site](https://ul.subquake.com)
