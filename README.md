@@ -1,5 +1,8 @@
+<div align="center">
+
 # Undead Legacy Mod Launcher
 
+[![Launcher](https://img.shields.io/github/v/release/SM1ThaYe/UndeadLegacyModLauncher?include_prereleases&label=Launcher&color=blue)](https://github.com/SM1ThaYe/UndeadLegacyModLauncher/releases/latest)
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue.svg)](#requirements)
 [![Game](https://img.shields.io/badge/7%20Days%20to%20Die-v2.6%20b14-orange.svg)](https://7daystodie.com/)
@@ -7,9 +10,9 @@
 
 An official standalone utility for installing, updating, and playing Subquake's Undead Legacy overhaul mod for 7 Days to Die.
 
-<p align="center">
-  <img width="800" alt="Undead Legacy Mod Launcher" src="https://github.com/user-attachments/assets/3095e956-ac90-4a87-8bc5-387df9f2cd89" />
-</p>
+<img width="800" alt="Undead Legacy Mod Launcher" src="https://github.com/user-attachments/assets/3095e956-ac90-4a87-8bc5-387df9f2cd89" />
+
+</div>
 
 ## Highlights
 
