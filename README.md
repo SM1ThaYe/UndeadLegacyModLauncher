@@ -2,7 +2,9 @@
 
 Official launcher for installing, updating, and managing Subquake's Undead Legacy overhaul mod for 7 Days to Die.
 
-<img width="1582" height="1213" alt="LauncherForGL" src="https://github.com/user-attachments/assets/2e543263-6707-41fc-ba8d-8a8d3cc29ced" />
+<p align="center">
+  <img width="800" alt="Undead Legacy Mod Launcher" src="https://github.com/user-attachments/assets/3095e956-ac90-4a87-8bc5-387df9f2cd89" />
+</p>
 
 ---
 
